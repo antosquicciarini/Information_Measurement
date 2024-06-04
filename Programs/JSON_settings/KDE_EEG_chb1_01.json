@@ -1,0 +1,22 @@
+{
+    "dataset": "EEG",
+    "exp_name": "EEG_new_trial",
+    "deltaX": 10000,
+    "prob_distr_type": "KDE",
+
+    "chb_indx": [1],
+    "chb_path": ["chb01_01.edf"],
+
+    "h_opt_strategy": ["JSD", "Silverman", "Scott"],
+
+    "grid_exp_base": 2.0,
+
+    "DeltaX_grid": [
+        [4, 13]
+    ],
+    
+    "h_plato_th": 0.01,
+    "IM_list": [
+        ["S", "Tq0.8", "Tq1.5", "Rq0.8", "Rq1.5", "F"]
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "dataset": "synthetic",
+    "sampling_rate" : 4096,
+    "deltaX": 512,
+    "x_discr": 2048,
+    "prob_distr_type": "KDE",
+    "freqs": [
+        [440.0, 220.0, 22.0, 1000.0, 0.5]
+    ],
+    "amps": [
+        [1.5, 2.0, 0.4, 2.8, 10.0]
+    ],
+    "freqs_anom": [
+        [440.0, 220.0, 22.0, 1000.0, 0.5, 1200.0, 2000.0]
+    ],
+    "amps_anom": [
+        [1.5, 2.0, 0.4, 2.8, 10.0, 4.0, 3.0]
+    ],
+    "t_total": 10.0,
+    "t0_anomaly": 5.0,
+
+    "h_opt_strategy": ["cost"],
+    "h_cost": [100],
+    "DeltaX_cost": [2048],
+
+    "IM_list": [
+        ["S", "Tq1.2", "Tq1.5", "Tq1.8", "Tq2.0", "Rq1.2", "Rq1.5", "Rq1.8", "Rq2.0", "F"]
+    ]
+
+}
