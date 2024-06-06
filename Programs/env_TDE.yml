@@ -1,4 +1,4 @@
-name: env
+name: env_TDE
 channels:
   - pytorch
   - conda-forge

@@ -89,13 +89,14 @@ def main():
 
     if len(sys.argv) > 1:
         code_cloud = True
-        json_name = sys.argv[2]
+        json_name = sys.argv[1]
+        print(f"JSON name: {json_name}")
 
     else:
         code_cloud = False
-        json_name = 'KDE_EEG_chb1_01.json' 
+        json_name = 'KDE_EEG_chb1_01' 
         
-    json_filename = f'Programs/JSON_settings/{json_name}' 
+    json_filename = f'Programs/JSON_settings/{json_name}.json' 
     params_json = load_parameters_from_json(json_filename)
     params_list = generate_settings_combinations(params_json)
 

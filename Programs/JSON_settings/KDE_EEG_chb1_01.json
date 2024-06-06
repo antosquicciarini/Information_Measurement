@@ -1,7 +1,7 @@
 {
     "dataset": "EEG",
     "exp_name": "EEG_new_trial",
-    "deltaX": 10000,
+    "deltaX": 512,
     "prob_distr_type": "KDE",
 
     "chb_indx": [1],

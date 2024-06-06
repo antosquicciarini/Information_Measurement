@@ -2,6 +2,7 @@ from __future__ import print_function
 import argparse
 import datetime
 import copy
+import sys
 
 def parameter_setting(params, paths, json_name, code_cloud):
 
@@ -56,7 +57,10 @@ def parameter_setting(params, paths, json_name, code_cloud):
     parser.add_argument('--IM-list', type=list, default=params.get('IM_list', ["S"]), help='List of IM to compute against time')
 
     #args = parser.parse_args()
-    args = copy.deepcopy(parser.parse_args())
+    #args = copy.deepcopy(parser.parse_args())
+    args, remaining_args = parser.parse_known_args(sys.argv[2:])
+    print(remaining_args)
+
 
     args.code_cloud = code_cloud
         
